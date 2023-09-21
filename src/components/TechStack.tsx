@@ -15,9 +15,9 @@ const TechStack = () => {
       </h1>
       <div className="md:flex justify-center gap-4 pb-8">
         <div className="flex gap-4 justify-center items-center flex-wrap">
-          {IconsFrontend.map((icon) => {
+          {IconsFrontend.map((icon, index) => {
             return (
-              <TooltipProvider delayDuration={100}>
+              <TooltipProvider delayDuration={100} key={index}>
                 <Tooltip>
                   <TooltipTrigger>
                     <div dangerouslySetInnerHTML={{ __html: icon.icon }} />

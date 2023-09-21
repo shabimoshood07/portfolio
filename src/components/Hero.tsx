@@ -4,7 +4,6 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import TechStack from "./TechStack";
 function Hero() {
   return (
-    // min-h-[calc(100vh-64px)]
     <>
       <div className=" max-w-6xl mx-auto  flex justify-stretch flex-col">
         <div className="md:flex flex-row-reverse items-center md:pt-10">
@@ -21,7 +20,7 @@ function Hero() {
               Full-Stack Developer
             </h1>
             <p className="text-center font-medium -leading-8 py-4 w-[95%] mx-auto tracking-tight text-[17px] md:text-[30px] max-w-lg md:max-w-none">
-              Hi 🖐, I'm <span className="font-extrabold">Moshood Shabi </span> . A
+              Hi 🖐, I&apos;m <span className="font-extrabold">Moshood Shabi </span> . A
               passionate Web Developer based in Gwagwalada, Nigeria.
             </p>
             <div className="flex gap-4  w-full mx-auto justify-center">

@@ -15,9 +15,9 @@ import { FiExternalLink } from "react-icons/fi";
 const ProjectCard = () => {
   return (
     <>
-      {projects.map((project) => {
+      {projects.map((project, index) => {
         return (
-          <div className="border border-slate-950  rounded-lg flex flex-col items-center my-8 py-4 px-1 max-w-3xl mx-auto md:px-3 shadow-xl">
+          <div className="border border-slate-950  rounded-lg flex flex-col items-center my-8 py-4 px-1 max-w-3xl mx-auto md:px-3 shadow-xl" key={index}>
             <h1 className="uppercase text-center font-semibold text-slate-950">
               {project.title}
             </h1>
@@ -30,11 +30,11 @@ const ProjectCard = () => {
 
                 <div className="flex gap-2 justify-center md:justify-end items-center flex-wrap my-4">
                   <h1 className="text-center underline text-red-500">Stack</h1>
-                  {IconsFrontend.map((icon) => {
+                  {IconsFrontend.map((icon, index) => {
                     let stack = project.stack;
                     if (stack.includes(icon.name)) {
                       return (
-                        <TooltipProvider delayDuration={100}>
+                        <TooltipProvider delayDuration={100} key={index}>
                           <Tooltip>
                             <TooltipTrigger>
                               <div
