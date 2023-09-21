@@ -22,7 +22,10 @@ const TechStack = () => {
                   <TooltipTrigger>
                     <div dangerouslySetInnerHTML={{ __html: icon.icon }} />
                   </TooltipTrigger>
-                  <TooltipContent className="bg-gray-400 text-slate-950">
+                  <TooltipContent
+                    side="bottom"
+                    className="bg-slate-950 text-red-500"
+                  >
                     <p>{icon.name}</p>
                   </TooltipContent>
                 </Tooltip>

@@ -8,13 +8,13 @@ const Navbar = () => {
   const toggleNav = () => setShowNav(!showNav);
 
   return (
-    <nav className="sticky top-0 bg-gray-400 py-4 px-3 ">
+    <nav className="sticky top-0 bg-gray-400 py-4 px-3  z-50">
       <div className="mx-auto max-w-6xl w-[98%] flex justify-between items-center">
         <Link
           href="/"
           className="text-slate-950 font-bold tracking-tight leading-8 md:text-[20px] "
         >
-          MoshCode
+          Mosh<span className="text-red-500">Code</span>
         </Link>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -33,6 +33,7 @@ const Navbar = () => {
         </svg>
         {/* MOBILE NAV */}
         <div
+          onClick={toggleNav}
           className={`
           
           ${showNav ? "h-screen" : "h-0"}
@@ -60,7 +61,7 @@ const Navbar = () => {
             } w-full flex justify-center items-center flex-col gap-10 duration-75 overflow-hidden`}
           >
             <li>
-              <Link href="#about" className="nav-links">
+              <Link href="#home" className="nav-links">
                 Home
               </Link>
             </li>
@@ -70,12 +71,12 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="#about" className="nav-links">
+              <Link href="#projects" className="nav-links">
                 Project
               </Link>
             </li>
             <li className="pb-3">
-              <Link href="#about" className="nav-links">
+              <Link href="#contact" className="nav-links">
                 Contact
               </Link>
             </li>
@@ -87,7 +88,7 @@ const Navbar = () => {
         <div className="hidden md:block">
           <ul className=" h-full w-full flex justify-center items-center gap-10">
             <li>
-              <Link href="#about" className="nav-links">
+              <Link href="#home" className="nav-links">
                 Home
               </Link>
             </li>
@@ -97,12 +98,12 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="#about" className="nav-links">
+              <Link href="#projects" className="nav-links">
                 Project
               </Link>
             </li>
             <li>
-              <Link href="#about" className="nav-links">
+              <Link href="#contact" className="nav-links">
                 Contact
               </Link>
             </li>

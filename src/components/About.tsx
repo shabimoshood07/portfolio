@@ -1,8 +1,9 @@
 const About = () => {
+  // min-h-[calc(70vh-64px)]
   return (
-    <div id="about" className="bg-gray-300 min-h-[calc(70vh-64px)] flex justify-center items-center">
+    <div id="about" className="bg-gray-300  flex justify-center items-center py-20">
       <div className="w-[98%] max-w-4xl mx-auto px-3">
-        <h1 className="text-[25px] font-bold">About</h1>
+        <h1 className="text-[25px] font-bold section-heading relative inline-block mb-3">About</h1>
         <p className="text-justify leading-8 md:text-[20px]">
           As a Full Stack Developer, I am passionate about designing and
           building dynamic web applications that solve real-world problems. I
