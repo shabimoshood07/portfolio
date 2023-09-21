@@ -10,7 +10,7 @@ import { IconsFrontend } from "@/lib/icons";
 const TechStack = () => {
   return (
     <section>
-      <h1 className="text-center font-bold text-[18px] md:text-[22px] mt-8 mb-2 md:mt-20">
+      <h1 className="text-center font-bold text-[18px] md:text-[22px] mt-8 mb-2 md:mt-20 md:mb-5">
         Familiar Technologies
       </h1>
       <div className="md:flex justify-center gap-4 pb-8">
