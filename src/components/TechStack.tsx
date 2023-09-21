@@ -9,11 +9,11 @@ import { IconsFrontend } from "@/lib/icons";
 
 const TechStack = () => {
   return (
-    <>
-      <h1 className="text-center font-bold text-[18px] my-4">
+    <section>
+      <h1 className="text-center font-bold text-[18px] md:text-[22px] mt-8 mb-2 md:mt-20">
         Familiar Technologies
       </h1>
-      <div className="md:flex justify-center gap-4">
+      <div className="md:flex justify-center gap-4 pb-8">
         <div className="flex gap-4 justify-center items-center flex-wrap">
           {IconsFrontend.map((icon) => {
             return (
@@ -31,7 +31,7 @@ const TechStack = () => {
           })}
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
