@@ -8,7 +8,7 @@ const Navbar = () => {
   const toggleNav = () => setShowNav(!showNav);
 
   return (
-    <nav className="sticky top-0 bg-gray-400 py-4 px-3  z-50">
+    <nav className="sticky top-0 bg-gray-400 py-4 px-3  z-50 opacity-95">
       <div className="mx-auto max-w-6xl w-[98%] flex justify-between items-center">
         <Link
           href="/"
