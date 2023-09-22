@@ -20,7 +20,7 @@ const TechStack = () => {
               <TooltipProvider delayDuration={100} key={index}>
                 <Tooltip>
                   <TooltipTrigger>
-                    <div dangerouslySetInnerHTML={{ __html: icon.icon }} />
+                    <icon.icon />
                   </TooltipTrigger>
                   <TooltipContent
                     side="bottom"

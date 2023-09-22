@@ -17,7 +17,10 @@ const ProjectCard = () => {
     <>
       {projects.map((project, index) => {
         return (
-          <div className="border border-slate-950  rounded-lg flex flex-col items-center my-8 py-4 px-1 max-w-3xl mx-auto md:px-3 shadow-xl" key={index}>
+          <div
+            className="border border-slate-950  rounded-lg flex flex-col items-center my-8 py-4 px-1 max-w-3xl mx-auto md:px-3 shadow-xl"
+            key={index}
+          >
             <h1 className="uppercase text-center font-semibold text-slate-950">
               {project.title}
             </h1>
@@ -37,11 +40,7 @@ const ProjectCard = () => {
                         <TooltipProvider delayDuration={100} key={index}>
                           <Tooltip>
                             <TooltipTrigger>
-                              <div
-                                dangerouslySetInnerHTML={{
-                                  __html: icon.icon,
-                                }}
-                              />
+                              <icon.icon />
                             </TooltipTrigger>
                             <TooltipContent
                               side="bottom"
