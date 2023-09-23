@@ -10,7 +10,7 @@ export const projects = [
     demo: "https://time-management-app-next-js.vercel.app/",
   },
   {
-    title: "Artisan App",
+    title: "Artisan`",
     description:
       "Provide Access To A Team Of Dedicated Professionals Committed To Providing Top-Quality Products And Services To Customers.",
     image1: "/ARTISANS1.png",
