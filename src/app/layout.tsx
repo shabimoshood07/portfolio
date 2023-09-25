@@ -1,9 +1,7 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Varela, Abhaya_Libre } from "next/font/google";
-
-// const inter = Inter({ subsets: ['latin'] })
+import { Varela } from "next/font/google";
 const varela = Varela({ subsets: ["latin-ext"], weight: "400" });
 export const metadata: Metadata = {
   title: "MoshCode Portfolio",
