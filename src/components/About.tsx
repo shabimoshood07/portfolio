@@ -1,5 +1,4 @@
 const About = () => {
-  // min-h-[calc(70vh-64px)]
   return (
     <div id="about" className="bg-gray-300  flex justify-center items-center py-20">
       <div className="w-[98%] max-w-4xl mx-auto px-3">
