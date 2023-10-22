@@ -76,7 +76,7 @@
 }
 
 .nav-links {
-  @apply text-[25px] md:text-[20px] font-semibold relative;
+  @apply text-[18px] md:text-[16px]  relative;
 }
 
 .nav-links::after {
