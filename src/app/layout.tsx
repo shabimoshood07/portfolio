@@ -1,9 +1,8 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Varela } from "next/font/google";
-import React, { ReactNode } from "react";
-
+import { Varela, Abhaya_Libre } from "next/font/google";
+import React from "react"
 const varela = Varela({ subsets: ["latin-ext"], weight: "400" });
 export const metadata: Metadata = {
   title: "MoshCode Portfolio",
@@ -12,7 +11,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children:ReactNode;
+  children:React.ReactNode;
 }) {
   return (
     <html lang="en" className="scroll-smooth">
