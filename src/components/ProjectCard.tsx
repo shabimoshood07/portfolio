@@ -21,13 +21,13 @@ const ProjectCard = () => {
             className="border border-slate-950  rounded-lg flex flex-col items-center my-8 py-4 px-1 max-w-3xl mx-auto md:px-3 shadow-xl"
             key={index}
           >
-            <h1 className="uppercase text-center font-semibold text-slate-950">
-              {project.title}
-            </h1>
+            <div className="md:flex flex-row-reverse items-start justify-end min-h-[300px] gap-4 w-full flex-1">
+              <div className="md:flex-1 md:my-4 md:flex justify-around items-start flex-col">
+                <h1 className="uppercase md:text-center font-semibold text-slate-950 text-[20px] w-full">
+                  {project.title}
+                </h1>
 
-            <div className="md:flex flex-row-reverse items-center min-h-[300px] gap-2">
-              <div className="">
-                <p className="text-center max-w-[90%] md:max-w-none mx-auto text-slate-950">
+                <p className="md:text-left w-full text-slate-950">
                   {project.description}
                 </p>
 
@@ -56,20 +56,21 @@ const ProjectCard = () => {
                 </div>
               </div>
 
-              <div className="relative w-fit mx-auto my-4 flex-shrink-0  items-center">
+              <div className="relative my-4  flex-shrink-0  items-center h-[300px] w-full md:w-[400px] rounded-[15px] overflow-hidden">
                 <Image
                   src={project.image1}
-                  height={400}
-                  width={400}
+                  height={500}
+                  width={500}
                   alt={project.title}
+                  className="absolute left-0 right-0 w-full h-full object-cover"
                 />
-                <Image
+                {/* <Image
                   src={project.image2}
                   height={100}
                   width={100}
                   alt={project.title}
                   className="absolute bottom-0 right-0"
-                />
+                /> */}
               </div>
             </div>
 
