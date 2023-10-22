@@ -58,19 +58,12 @@ const ProjectCard = () => {
 
               <div className="relative my-4  flex-shrink-0  items-center h-[300px] w-full md:w-[400px] rounded-[15px] overflow-hidden">
                 <Image
-                  src={project.image1}
+                  src={project.image}
                   height={500}
                   width={500}
                   alt={project.title}
                   className="absolute left-0 right-0 w-full h-full object-cover"
                 />
-                {/* <Image
-                  src={project.image2}
-                  height={100}
-                  width={100}
-                  alt={project.title}
-                  className="absolute bottom-0 right-0"
-                /> */}
               </div>
             </div>
 
