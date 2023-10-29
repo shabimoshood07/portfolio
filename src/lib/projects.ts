@@ -4,7 +4,7 @@ export const projects = [
     description:
       "Fitness app",
     image: "/fitnesso.PNG",
-    stack: ["NextJs", "Typescript", "MongoDB", "TailwindCSS"],
+    stack: ["NextJs", "Typescript", "TailwindCSS"],
     github: "https://github.com/shabimoshood07/fitnesso",
     demo: "https://fitnesso-nextjs.netlify.app/",
   },
