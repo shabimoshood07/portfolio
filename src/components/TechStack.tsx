@@ -19,7 +19,7 @@ const TechStack = () => {
             return (
               <TooltipProvider delayDuration={100} key={index}>
                 <Tooltip>
-                  <TooltipTrigger>
+                  <TooltipTrigger className="hover:-translate-y-1 duration-300">
                     <icon.icon />
                   </TooltipTrigger>
                   <TooltipContent
