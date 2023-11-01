@@ -9,6 +9,15 @@ export const projects = [
     demo: "https://fitnesso-nextjs.netlify.app/",
   },
   {
+    title: "Threads clone",
+    description:
+      "The app is designed to emulate and replicate a selection of the core functionalities found in the official threads app.",
+    image: "/threads-clone.PNG",
+    stack: ["NuxtJs", "Typescript", "Supabase"],
+    github: "https://github.com/shabimoshood07/Threads-clone",
+    demo: "https://threads-clone-nuxtapp.netlify.app/",
+  },
+  {
     title: "Time Management App",
     description:
       "  The Time Management App is designed to assist individuals in monitoring and organizing their daily tasks effectively",
@@ -36,3 +45,16 @@ export const projects = [
     demo: "https://appointment-management-system-ten.vercel.app/",
   },
 ];
+
+
+export const playGround = [
+  {
+    title: "Absyy frontend challenge",
+    description:
+      "",
+    image: "/fitnesso.PNG",
+    stack: ["ReactJs", "Typescript"],
+    github: "https://github.com/shabimoshood07/fitnesso",
+    demo: "https://fitnesso-nextjs.netlify.app/",
+  },
+]
